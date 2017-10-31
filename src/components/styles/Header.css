@@ -5,16 +5,33 @@
   align-items: center;
   justify-content: flex-end;
   height: 70px;
+  padding: 0 20px;
+}
+
+.Header-btn-menu,
+.Header-btn-cancel {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.Header-btn-menu:focus,
+.Header-btn-cancel:focus {
+  outline: none;
 }
 
 .Header-nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
 }
 
 .Header-tab {
-  margin: 0 10px;
+  margin: 0 15px;
   padding: 5px 0;
   border-bottom: 2px solid #EFEFEF;
   color: #333333;
@@ -34,8 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 20px;
-  margin: 0 10px;
+  padding: 5px 15px;
   color: #FFF;
   background-color: #288AE2;
   border: 1px solid #288AE2;
