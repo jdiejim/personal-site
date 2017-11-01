@@ -67,6 +67,7 @@ and (max-width : 480px) {
 
 /* About */
   .About {
+    width: 95%;
     padding: 10px;
   }
 
@@ -96,10 +97,17 @@ and (max-width : 480px) {
     padding: 0 10px;
   }
 
+  .About-links {
+    justify-content: space-between;
+  }
+
+  .About-link {
+    margin: 0 5px;
+  }
+
   .About-resume {
     padding: 5px 20px;
     margin: 0 5px;
-    font-size: 16px;
     transition: transform 0.2s;
   }
 }
