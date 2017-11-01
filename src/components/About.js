@@ -1,9 +1,10 @@
 import React from 'react';
-import './styles/About.css';
+import ProfileCarousel from './ProfileCarousel';
 import p1 from '../assets/p1.jpeg';
 import github from '../assets/github.svg';
 import twitter from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
+import './styles/About.css';
 
 function About() {
   const profilePic = { backgroundImage: `url(${p1})` };
@@ -26,15 +27,13 @@ function About() {
           <p>I also enjoy mixing design principles and data analysis to provide creative solutions, that not only have an intuitive design, but also a great user experience.</p>
         </section>
         <section className="About-links">
-          <a target="_blank" style={linkedinBG} className="About-link" href="https://www.linkedin.com/in/jdiejim" />
-          <a target="_blank" style={githubBG} className="About-link" href="https://github.com/jdiejim" />
-          <a target="_blank" style={twitterBG} className="About-link" href="https://twitter.com/jdiejim" />
-          <a target="_blank" className="About-resume" href="https://www.turing.io/sites/default/files/resumes/Juan%20Jimenez%20Resume.pdf">Resume</a>
+          <a style={linkedinBG} className="About-link" href="https://www.linkedin.com/in/jdiejim">LinkedIn</a>
+          <a style={githubBG} className="About-link" href="https://github.com/jdiejim">Github</a>
+          <a style={twitterBG} className="About-link" href="https://twitter.com/jdiejim">Twitter</a>
+          <a className="About-resume" href="https://www.turing.io/sites/default/files/resumes/Juan%20Jimenez%20Resume.pdf">Resume</a>
         </section>
       </article>
-      <article className="About-pic">
-
-      </article>
+      <ProfileCarousel />
     </section>
   );
 }
