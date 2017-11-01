@@ -9,21 +9,32 @@ class App extends Component {
     super();
     this.state = {
       menuIsHidden: false,
+      contactIsHidden: true,
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.toggleContactForm = this.toggleContactForm.bind(this);
   }
 
   toggleMenu() {
     this.setState({ menuIsHidden: !this.state.menuIsHidden });
   }
 
+  toggleContactForm() {
+    this.setState({ contactIsHidden: !this.state.contactIsHidden });
+  }
+
   render() {
-    const { menuIsHidden } = this.state;
+    const { menuIsHidden, contactIsHidden } = this.state;
 
     return (
       <section className="App">
-        <Header handleOnClick={this.toggleMenu} menuIsHidden={menuIsHidden} />
+        <Header 
+          handleToggleMenu={this.toggleMenu} 
+          handleToggleForm={this.toggleContactForm} 
+          menuIsHidden={menuIsHidden} 
+          contactIsHidden={contactIsHidden} 
+        />
         <Route exact path="/" component={About} />
       </section>
     );
