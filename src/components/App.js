@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import About from './About';
 import Header from './Header';
 import './styles/App.css';
 
@@ -22,6 +24,7 @@ class App extends Component {
     return (
       <section className="App">
         <Header handleOnClick={this.toggleMenu} menuIsHidden={menuIsHidden} />
+        <Route exact path="/" component={About} />
       </section>
     );
   }

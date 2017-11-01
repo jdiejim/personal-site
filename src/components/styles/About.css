@@ -1,0 +1,84 @@
+.About {
+  height: 100vh;
+  padding: 10px 20px;
+}
+
+.About-description {
+  animation: slide-right 0.2s;
+}
+
+.About-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.About-banner-pic {
+  display: none;
+  width: 170px;
+  height: 170px;
+  animation: slide-right 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.About-title {
+  color: #333333;
+  font-size: 50px;
+}
+
+.About-subtitle {
+  color: #757575;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.About-story {
+  padding: 0 20px;
+  border-left: 3px solid #BDBDBD;
+}
+
+.About-story p {
+  margin-bottom: 20px;
+}
+
+.About-links {
+  display: flex;
+  align-items: center;
+}
+
+.About-link {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.2s;
+}
+
+.About-link:hover {
+  transform: scale(1.1);
+}
+
+.About-resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  margin: 0 20px;
+  color: #1178B3;
+  background-color: #EFEFEF;
+  border: 1px solid #1178B3;
+  border-radius: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.About-resume:hover {
+  transform: scale(1.1);
+}

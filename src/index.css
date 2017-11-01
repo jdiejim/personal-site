@@ -17,10 +17,19 @@ button {
   cursor: pointer;
 }
 
+/* Animations */
+
+@keyframes slide-right {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-width : 320px) 
 and (max-width : 480px) {
+
+/* Header */
   .Header {
     justify-content: space-between;
   }
@@ -54,6 +63,44 @@ and (max-width : 480px) {
 
   .Header-tab {
     margin: 10px;
+  }
+
+/* About */
+  .About {
+    padding: 10px;
+  }
+
+  .About-banner {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .About-banner-pic {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .About-title-wrapper {
+    text-align: center;
+  }
+
+  .About-title {
+    font-size: 35px;
+  }
+
+  .About-subtitle {
+    font-size: 20px;
+  }
+
+  .About-story {
+    padding: 0 10px;
+  }
+
+  .About-resume {
+    padding: 5px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    transition: transform 0.2s;
   }
 }
  

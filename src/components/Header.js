@@ -13,11 +13,11 @@ function Header({ handleOnClick, menuIsHidden }) {
     <header className={headerClass}>
       <button onClick={handleOnClick} className="Header-btn-menu" style={menuBG} />
        <nav className="Header-nav">
-          <button onClick={handleOnClick} className="Header-btn-cancel" style={cancelBG} />
-          <NavLink to="/about" className="Header-tab" activeClassName="is-selected">About</NavLink>
-          <NavLink to="/projects" className="Header-tab" activeClassName="is-selected">Projects</NavLink>
-          <NavLink to="/skills" className="Header-tab" activeClassName="is-selected">Skills</NavLink>
-          <NavLink to="/blog" className="Header-tab" activeClassName="is-selected">Blog</NavLink>
+        <button onClick={handleOnClick} className="Header-btn-cancel" style={cancelBG} />
+        <NavLink exact to="/" className="Header-tab" activeClassName="is-selected">About</NavLink>
+        <NavLink to="/projects" className="Header-tab" activeClassName="is-selected">Projects</NavLink>
+        <NavLink to="/skills" className="Header-tab" activeClassName="is-selected">Skills</NavLink>
+        <NavLink to="/blog" className="Header-tab" activeClassName="is-selected">Blog</NavLink>
       </nav>
       <button id="contact-me">Contact Me</button>
     </header>
