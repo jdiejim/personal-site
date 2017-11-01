@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import About from './About';
+import ProjectsView from './ProjectsView';
 import Header from './Header';
 import './styles/App.css';
 
@@ -36,6 +37,7 @@ class App extends Component {
           contactIsHidden={contactIsHidden} 
         />
         <Route exact path="/" component={About} />
+        <Route path="/projects" component={ProjectsView} />
       </section>
     );
   }
